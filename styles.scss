@@ -15,14 +15,21 @@ html {
 }
 
 
-.custom_back_graph{
-  background-color: $primary;
+/*GRAFICO POSTERIOR--- A REVISAR!!!!!*/
+.custom_pill_right{
   position: relative;
   z-index: -1;
-  overflow: visible
+  overflow: visible;
+  width: 50vw;  /* Ancho relativo al viewport */
+  height: 25vh; /* Alto relativo al viewport */
+  top: 50%;  /* Ajusta la posición vertical */
+  left: 50%; /* Ajusta la posición horizontal */
+  left: 100%; /* Posición inicial fuera de pantalla */
+  transform: translate(-50%, -80%); /* Centra el div respecto a la imagen */
   
 }
 
+/************************************/
 
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";

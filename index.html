@@ -69,6 +69,7 @@
     <!----------------CUERPO----------------->
     <div class="container main-content mt-5">
     
+        <!--PARTE PRINCIPAL-->
         <div class="container-fluid d-flex">
             <div class="row align-items-center">
 
@@ -77,9 +78,9 @@
                 <div class="col-md-6 py-4 order-md-2">
                     <!--img-fluid == max-width 100% & height:auto-->
                     <img class="img-fluid" src="./Imagenes/illustration-hero.svg" alt="logo bookmark">
-                    <div class="custom_back_graph">
-                            Hola
-                    </div>
+
+                    <!--<div class="bg-primary rounded-pill custom_pill_right"></div>-->
+
                 </div>
 
                 <div class="col-md-6 order-md-1">
@@ -91,6 +92,91 @@
 
             </div>
         </div>
+
+
+        <!-----FEATURES-------------->
+        <!-- Contenedor principal -->
+        <div class="container mt-3">
+
+            <!-- Primera fila: Título y descripción -->
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h1>Features</h1>
+                    <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                </div>
+            </div>
+            
+            <!-- Segunda fila: Pestañas -->
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-10">
+                    <!-- Nav tabs -->
+                    <nav>
+                        <!-- Grupo de pestañas -->
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                            <!-- Pestaña 1 -->
+                            <button class="nav-link active" id="nav-bookmark-tab" data-bs-toggle="tab" data-bs-target="#nav-bookmark" type="button" role="tab" aria-controls="nav-bookmark" aria-selected="true">Simple bookmarking</button>
+                            <!-- Pestaña 2 -->
+                            <button class="nav-link" id="nav-search-tab" data-bs-toggle="tab" data-bs-target="#nav-search" type="button" role="tab" aria-controls="nav-search" aria-selected="false">Speedy Searching</button>
+                            <!-- Pestaña 3 -->
+                            <button class="nav-link" id="nav-share-tab" data-bs-toggle="tab" data-bs-target="#nav-share" type="button" role="tab" aria-controls="nav-share" aria-selected="false">Easy Sharing</button>
+                        </div>
+                    </nav>
+
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content" id="nav-tabContent">
+                        <!-- Contenido de la pestaña 1 -->
+                        <div class="tab-pane fade show active" id="nav-bookmark" role="tabpanel" aria-labelledby="nav-bookmark-tab">
+
+                            <div class="row py-4 align-items-center">
+                                <div class="col-md-6">
+                                    <img class="img-fluid" src="./Imagenes/illustration-features-tab-1.svg" alt="logo bookmark">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Bookmark in one click</h3>
+                                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                                    <button class="btn btn-primary shadow">More info</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Contenido de la pestaña 2 -->
+                        <div class="tab-pane fade" id="nav-search" role="tabpanel" aria-labelledby="nav-search-tab">
+
+                            <div class="row py-4 align-items-center">
+                                <div class="col-md-6">
+                                    <img class="img-fluid" src="./Imagenes/illustration-features-tab-2.svg" alt="logo bookmark">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Intelligent search</h3>
+                                    <p>Our powerfull search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                                    <button class="btn btn-primary shadow">More info</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Contenido de la pestaña 3 -->
+                        <div class="tab-pane fade" id="nav-share" role="tabpanel" aria-labelledby="nav-share-tab">
+
+                            <div class="row py-4 align-items-center">
+                                <div class="col-md-6">
+                                    <img class="img-fluid" src="./Imagenes/illustration-features-tab-3.svg" alt="logo bookmark">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Share your bookmarks</h3>
+                                    <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                                    <button class="btn btn-primary shadow">More info</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <!------------------>
+        <!------------------>
     
     </div>
 
