@@ -15,6 +15,13 @@ html {
 }
 
 
+/*A REVISAR!!!! NO FUNCIONA!!*/
+/* Borde inferior para el tab activo */
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid var(--bs-secondary);
+  color: var(--bs-secondary);
+}
+
 /*GRAFICO POSTERIOR--- A REVISAR!!!!!*/
 .custom_pill_right{
   position: relative;
