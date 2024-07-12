@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miriam Martin Casas">
+    <meta name="keywords" content="CSS, HTML, Flexbox, Bootstrap">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tasca 1.2</title>
+</head>
+<body>
+
+    <!----------------HEAD/NAV------------------->
+    <head>
+
+        <nav class="navbar navbar-expand-sm bg-white fixed-top">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="./index.html"><img src="./Imagenes/logo-bookmark.svg" alt="logo bookmark"></a>
+
+                <!--Botón hamburguesa: (navbar-toggler) 
+                data-bs-toggle=collapse: Indica que el botón se usará para expandir un elemento asociado
+                data-bs-target: especifica el ID del elemento que se colapsa/expande
+                aria-controls: Indica el ID del elemento controlado (accesibilidad)
+                aria-expanded= false: define el estado inicial del menú como no expandido, cambia  atrue cuando lo está
+                aria-label: Descripción del botón (accesibilidad)
+                -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Contenedor de los elementos que colapsaran en mobil-->
+                <div class="collapse navbar-collapse" id="navbarNav"> 
+
+
+
+                    <!-- d-sm-none: No lo muestra, a no ser que la pantalla sea pequeña
+                    <button type="button" class="btn-close d-sm-none" aria-label="Close"></button>
+                    -->
+
+
+                    <!--Listado no ordenado-->
+                    <!--ms-auto: empuja hacia al final (derecha) desde donde se marca-->
+                    <ul class="navbar-nav ms-auto"> 
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+
+                        <button class="btn btn-secondary text-white" type="submit">LOGIN</button>
+
+                    </ul>
+
+                </div> <!--FIN collapse navbar-collapse-->
+        
+            </div> <!--FIN container-->
+
+        </nav>
+
+    </head>
+
+    <!----------------CUERPO----------------->
+    <div class="container main-content mt-5">
+    
+        <div class="container-fluid d-flex">
+            <div class="row align-items-center">
+
+                <!--py: padding superior e inferior-->
+                <!--order: Marca el orden hasta el formato tablet-->
+                <div class="col-md-6 py-4 order-md-2">
+                    <!--img-fluid == max-width 100% & height:auto-->
+                    <img class="img-fluid" src="./Imagenes/illustration-hero.svg" alt="logo bookmark">
+                    <div class="custom_back_graph">
+                            Hola
+                    </div>
+                </div>
+
+                <div class="col-md-6 order-md-1">
+                    <h1>A Simple Bookmark Manager</h1>
+                    <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <button class="btn btn-primary shadow">Get it on Chrome</button>
+                    <button class="btn btn-light shadow">Get it on Firefox</button>
+                </div>
+
+            </div>
+        </div>
+    
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+
+    </footer>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

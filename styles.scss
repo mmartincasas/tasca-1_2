@@ -1,0 +1,28 @@
+
+/*Modificación color primario y secundario Bootstrap*/
+$primary: #5265E1;
+$secondary: #FA5959;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary
+);
+/******/
+
+
+html {
+    margin: 20px
+}
+
+
+.custom_back_graph{
+  background-color: $primary;
+  position: relative;
+  z-index: -1;
+  overflow: visible
+  
+}
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
