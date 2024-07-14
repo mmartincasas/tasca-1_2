@@ -10,33 +10,31 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
+    <div class="row justify-content-center bg-primary py-5 px-3">
+        <div class="col-md-6 text-center py-3">
+            <h6 class="text-white" style="font-size: 0.75rem; letter-spacing: 1ch;">35.000 + ALREADY JOINED</h6>
+            <h3 class="text-white py-4">Stay up-to-date-with what we're going</h3>
     
-      <div class="container mt-5">
-        <h1>Contenido Principal</h1>
-        <p>Este es el contenido que se desplaza hacia abajo para no estar oculto por la navbar.</p>
-      </div>
+            <form class="row g-3 justify-content-center needs-validation" novalidate>
+                <div class="col-md-6">
+                    <label for="inputEmail" class="visually-hidden">Email</label>
+                    <input type="email" class="form-control p-2" id="inputEmail" 
+                           placeholder="Enter your email address" style="font-size: 0.75rem" required>
+                    <div class="valid-feedback">
+                        Todo bien
+                    </div>
+                    <div class="invalid-feedback">
+                        Es necesario poner el e-mail
+                    </div>
+                </div>
+                <div class="col-md-4 col-12"> <!-- col-12 para ocupar todo el ancho en pantallas pequeñas -->
+                    <button type="submit" class="btn btn-secondary text-white py-2 px-3 w-100" style="font-size: 0.75rem">Contact Us</button>
+                </div>
+            </form>
+    
+        </div>
+    </div>
       
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     

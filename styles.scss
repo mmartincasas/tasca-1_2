@@ -10,12 +10,21 @@ $theme-colors: (
 /******/
 
 
-html {
-    margin: 20px
+/*$accordion-button-color: red;*/
+$accordion-button-icon: url(./Imagenes/icon-arrow.svg);
+$accordion-icon-active-color: $secondary;
+
+
+
+
+
+/**A CORREGIR******************/
+.accordion:hover{
+  color: red;
 }
 
-
 /*A REVISAR!!!! NO FUNCIONA!!*/
+/*****************************/
 /* Borde inferior para el tab activo */
 .nav-tabs .nav-link.active {
   border-bottom: 3px solid var(--bs-secondary);
@@ -23,6 +32,7 @@ html {
 }
 
 /*GRAFICO POSTERIOR--- A REVISAR!!!!!*/
+/*****************************/
 .custom_pill_right{
   position: relative;
   z-index: -1;
