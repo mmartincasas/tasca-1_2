@@ -34,6 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav" style="font-size: 0.75rem; letter-spacing: 2px;"> 
 
 
+                    <!--   vh-100 vw-100   -->
 
                     <!-- d-sm-none: No lo muestra, a no ser que la pantalla sea pequeña
                     <button type="button" class="btn-close d-sm-none" aria-label="Close"></button>
@@ -70,18 +71,15 @@
 
     <!----------------CUERPO----------------->
     <div class="container main-content mt-5">
-    
+        <br><br><br>
         <!--PARTE PRINCIPAL-->
         <div class="container-fluid d-flex">
             <div class="row align-items-center">
 
-                <!--py: padding superior e inferior-->
-                <!--order: Marca el orden hasta el formato tablet-->
-                <div class="col-md-6 py-4 order-md-2">
+                <div class="col-md-6 order-md-2">
                     <!--img-fluid == max-width 100% & height:auto-->
                     <img class="img-fluid" src="./Imagenes/illustration-hero.svg" alt="logo bookmark">
-
-                    <!--<div class="bg-primary rounded-pill custom_pill_right"></div>-->
+                    <div class="custom_graph_right"></div>
 
                 </div>
 
@@ -94,7 +92,6 @@
 
             </div>
         </div>
-
 
         <!-----FEATURES-------------->
         <!-- Contenedor principal -->
@@ -116,11 +113,11 @@
                         <!-- Grupo de pestañas -->
                         <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                             <!-- Pestaña 1 -->
-                            <button class="nav-link active" id="nav-bookmark-tab" data-bs-toggle="tab" data-bs-target="#nav-bookmark" type="button" role="tab" aria-controls="nav-bookmark" aria-selected="true">Simple bookmarking</button>
+                            <button class="nav-link text-muted active" id="nav-bookmark-tab" data-bs-toggle="tab" data-bs-target="#nav-bookmark" type="button" role="tab" aria-controls="nav-bookmark" aria-selected="true">Simple bookmarking</button>
                             <!-- Pestaña 2 -->
-                            <button class="nav-link" id="nav-search-tab" data-bs-toggle="tab" data-bs-target="#nav-search" type="button" role="tab" aria-controls="nav-search" aria-selected="false">Speedy Searching</button>
+                            <button class="nav-link text-muted" id="nav-search-tab" data-bs-toggle="tab" data-bs-target="#nav-search" type="button" role="tab" aria-controls="nav-search" aria-selected="false">Speedy Searching</button>
                             <!-- Pestaña 3 -->
-                            <button class="nav-link" id="nav-share-tab" data-bs-toggle="tab" data-bs-target="#nav-share" type="button" role="tab" aria-controls="nav-share" aria-selected="false">Easy Sharing</button>
+                            <button class="nav-link text-muted" id="nav-share-tab" data-bs-toggle="tab" data-bs-target="#nav-share" type="button" role="tab" aria-controls="nav-share" aria-selected="false">Easy Sharing</button>
                         </div>
                     </nav>
 
@@ -132,6 +129,7 @@
                             <div class="row py-4 align-items-center">
                                 <div class="col-md-6">
                                     <img class="img-fluid" src="./Imagenes/illustration-features-tab-1.svg" alt="Bookmark in one click image">
+                                    <div class="custom_graph_left"></div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3>Bookmark in one click</h3>
@@ -175,12 +173,58 @@
                 </div>
             </div>
         </div>
-    
 
         <!-----AREA DE DESCARGAS-------->
+        <!-- Contenedor principal -->
+        <div class="container mt-3">
 
-        
-         <!-- Contenedor principal -->
+            <!-- Primera fila: Título y descripción -->
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h3>Download the extension</h3>
+                    <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="row justify-content-center">
+
+                <div class="card mx-2 mb-3 shadow" style="width: 18rem;">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <img class="img-fluid my-3" src="./Imagenes/logo-chrome.svg" alt="logo Chrome">
+                        <h5 class="card-title">Add to Chrome</h5>
+                        <p class="card-text">Minimum version 62</p>
+                        <img class="img-fluid mb-3" src="./Imagenes/bg-dots.svg" alt="dots line image">
+                        <a href="#" class="btn btn-primary">Add & Instal Extension</a>
+                    </div>
+                </div>
+
+                <div class="card mx-2 mb-3 shadow" style="width: 18rem;">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <img class="img-fluid my-3" src="./Imagenes/logo-firefox.svg" alt="logo Firefox">
+                        <h5 class="card-title">Add to Firefox</h5>
+                        <p class="card-text">Minimum version 55</p>
+                        <img class="img-fluid mb-3" src="./Imagenes/bg-dots.svg" alt="dots line image">
+                        <a href="#" class="btn btn-primary">Add & Instal Extension</a>
+                    </div>
+                </div>
+
+                <div class="card mx-2 mb-3 shadow" style="width: 18rem;">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <img class="img-fluid my-3" src="./Imagenes/logo-opera.svg" alt="logo Opera">
+                        <h5 class="card-title">Add to Opera</h5>
+                        <p class="card-text">Minimum version 46</p>
+                        <img class="img-fluid mb-3" src="./Imagenes/bg-dots.svg" alt="dots line image">
+                        <a href="#" class="btn btn-primary">Add & Instal Extension</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-----AREA DE FAQ-------->
+        <!-- Contenedor principal -->
         <div class="container my-5">
             <!-- Row para el contenido -->
             <div class="row justify-content-center">
@@ -254,11 +298,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-        <!------------------------------>
     
     </div>
 
@@ -283,7 +322,7 @@
                         <div class="valid-feedback">
                             Registration successful!
                         </div>
-                        <div class="invalid-feedback bg-secondary text-white" style="font-size: 0.75rem">
+                        <div class="invalid-feedback">
                             Whoops, make sure it's an email.
                         </div>
                     </div>
@@ -298,8 +337,8 @@
         <!--NAVS------------------>
         <div class="container-fluid" style="font-size: 0.75rem; letter-spacing: 2px; background-color: #18163B">       
             <nav class="navbar">
-                <div class="container"> <!-- Contenedor principal con alineación vertical centrada y justificado entre los elementos -->
-                    <div class="d-flex"> <!-- Contenedor para el logo y la barra de navegación -->
+                <div class="container"> 
+                    <div class="d-flex"> 
                         <a class="navbar-brand" href="./index.html"><img src="./Imagenes/logo-bookmark.svg" alt="logo bookmark"></a>
         
                         <ul class="navbar-nav flex-row"> <!-- Lista de navegación alineada hacia la izquierda -->

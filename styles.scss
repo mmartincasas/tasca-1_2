@@ -1,4 +1,6 @@
 
+/*VARIABLES*/
+
 /*Modificación color primario y secundario Bootstrap*/
 $primary: #5265E1;
 $secondary: #FA5959;
@@ -7,7 +9,6 @@ $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary
 );
-/******/
 
 
 /*$accordion-button-color: red;*/
@@ -15,38 +16,92 @@ $accordion-button-icon: url(./Imagenes/icon-arrow.svg);
 $accordion-icon-active-color: $secondary;
 
 
-
-
-
-/**A CORREGIR******************/
-.accordion:hover{
-  color: red;
-}
-
-/*A REVISAR!!!! NO FUNCIONA!!*/
-/*****************************/
-/* Borde inferior para el tab activo */
-.nav-tabs .nav-link.active {
-  border-bottom: 3px solid var(--bs-secondary);
-  color: var(--bs-secondary);
-}
-
 /*GRAFICO POSTERIOR--- A REVISAR!!!!!*/
 /*****************************/
-.custom_pill_right{
+.custom_graph_right{
+  background: $primary;
   position: relative;
   z-index: -1;
   overflow: visible;
-  width: 50vw;  /* Ancho relativo al viewport */
-  height: 25vh; /* Alto relativo al viewport */
-  top: 50%;  /* Ajusta la posición vertical */
-  left: 50%; /* Ajusta la posición horizontal */
-  left: 100%; /* Posición inicial fuera de pantalla */
-  transform: translate(-50%, -80%); /* Centra el div respecto a la imagen */
-  
+  width: 85%; 
+  height: 200px; 
+  top: 50%;  
+  left: 100%; 
+  transform: translate(-50%, -80%);
+  border-radius: 0 0 0 8em;
 }
+
+.custom_graph_left{
+  background: $primary;
+  position: relative;
+  z-index: -1;
+  overflow: visible;
+  width: 300%; 
+  height: 200px; 
+  top: 0%;  
+  left: 20%;
+  transform: translate(-80%, -50%);
+  border-radius: 0 8em 8em 0;
+}
+
 
 /************************************/
 
 
+
+
+
+
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+p {
+  color:#34353d;
+}
+
+
+.nav-tabs .nav-link.active {
+  border: 0;
+  border-bottom: 3px solid $secondary !important;
+  color: black
+}
+
+
+.nav-link:hover, nav-link:focus {
+  border: 0;
+  color: $secondary;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: $primary !important; 
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: $secondary !important; 
+}
+
+.btn-light:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.accordion-button:hover{
+  color: $secondary !important; 
+}
+
+.invalid-feedback {
+  background-color: $secondary;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 0 0 5px 5px;
+  margin: 0;
+}
+
+
+
+
+
+
