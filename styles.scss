@@ -20,7 +20,7 @@ $accordion-icon-active-color: $secondary;
 /*****************************/
 .custom_graph_right{
   background: $primary;
-  position: relative;
+  position: absolute;
   z-index: -1;
   overflow: visible;
   width: 85%; 
@@ -33,7 +33,7 @@ $accordion-icon-active-color: $secondary;
 
 .custom_graph_left{
   background: $primary;
-  position: relative;
+  position: absolute;
   z-index: -1;
   overflow: visible;
   width: 300%; 
@@ -93,12 +93,31 @@ p {
 }
 
 .invalid-feedback {
-  background-color: $secondary;
+  background-color: $danger;
   color: white;
   font-size: 0.75rem;
   border-radius: 0 0 5px 5px;
   margin: 0;
 }
+
+
+.valid-feedback {
+  background-color: $success;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 0 0 5px 5px;
+  margin: 0;
+}
+
+
+
+
+
+
+
+  
+
+
 
 
 

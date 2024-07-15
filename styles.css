@@ -6,7 +6,7 @@
 /*****************************/
 .custom_graph_right {
   background: #5265E1;
-  position: relative;
+  position: absolute;
   z-index: -1;
   overflow: visible;
   width: 85%;
@@ -19,7 +19,7 @@
 
 .custom_graph_left {
   background: #5265E1;
-  position: relative;
+  position: absolute;
   z-index: -1;
   overflow: visible;
   width: 300%;
@@ -11468,7 +11468,15 @@ p {
 }
 
 .invalid-feedback {
-  background-color: #FA5959;
+  background-color: #dc3545;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 0 0 5px 5px;
+  margin: 0;
+}
+
+.valid-feedback {
+  background-color: #198754;
   color: white;
   font-size: 0.75rem;
   border-radius: 0 0 5px 5px;
