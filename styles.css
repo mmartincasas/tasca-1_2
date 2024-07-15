@@ -2,34 +2,6 @@
 /*VARIABLES*/
 /*Modificación color primario y secundario Bootstrap*/
 /*$accordion-button-color: red;*/
-/*GRAFICO POSTERIOR--- A REVISAR!!!!!*/
-/*****************************/
-.custom_graph_right {
-  background: #5265E1;
-  position: absolute;
-  z-index: -1;
-  overflow: visible;
-  width: 85%;
-  height: 200px;
-  top: 50%;
-  left: 100%;
-  transform: translate(-50%, -80%);
-  border-radius: 0 0 0 8em;
-}
-
-.custom_graph_left {
-  background: #5265E1;
-  position: absolute;
-  z-index: -1;
-  overflow: visible;
-  width: 300%;
-  height: 200px;
-  top: 0%;
-  left: 20%;
-  transform: translate(-80%, -50%);
-  border-radius: 0 8em 8em 0;
-}
-
 /************************************/
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)

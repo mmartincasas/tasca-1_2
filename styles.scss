@@ -16,40 +16,8 @@ $accordion-button-icon: url(./Imagenes/icon-arrow.svg);
 $accordion-icon-active-color: $secondary;
 
 
-/*GRAFICO POSTERIOR--- A REVISAR!!!!!*/
-/*****************************/
-.custom_graph_right{
-  background: $primary;
-  position: absolute;
-  z-index: -1;
-  overflow: visible;
-  width: 85%; 
-  height: 200px; 
-  top: 50%;  
-  left: 100%; 
-  transform: translate(-50%, -80%);
-  border-radius: 0 0 0 8em;
-}
-
-.custom_graph_left{
-  background: $primary;
-  position: absolute;
-  z-index: -1;
-  overflow: visible;
-  width: 300%; 
-  height: 200px; 
-  top: 0%;  
-  left: 20%;
-  transform: translate(-80%, -50%);
-  border-radius: 0 8em 8em 0;
-}
-
 
 /************************************/
-
-
-
-
 
 
 
